@@ -1,0 +1,22 @@
+<!-- layouts/partials/projects-list.html -->
+<section id="projects">
+    <div class="projects-container">
+        <h2>Projects</h2>
+        {{ range .Site.RegularPages.ByDate.Reverse }}
+        {{ if eq .Type "projects" }}
+            <div class="project-container">
+                <a href="{{ .Permalink }}">
+                    <article class="project-item">
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="project-image">
+                    <div class="project-details">
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Summary }}</p>
+                    </div>
+                    </article>
+                </a>
+            </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+  

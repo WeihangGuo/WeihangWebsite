@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  <!-- Load the about me block -->
+  {{ $about_me := .Site.GetPage "about_me" }}
+  {{ if $about_me }}
+    {{ partial "about-me.html" $about_me }}
+  {{ end }}
+  {{ partial "projects-list.html" . }}
+{{ end }}

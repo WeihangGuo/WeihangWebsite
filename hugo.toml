@@ -1,7 +1,7 @@
 baseURL = ''
 languageCode = 'en-us'
 title = 'Weihang Guo'
-theme = ''
+theme = 'TossAcadTest'
 
 [[menus.main]]
 name = 'Projects'
