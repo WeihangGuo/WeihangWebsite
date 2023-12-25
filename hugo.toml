@@ -1,7 +1,7 @@
 baseURL = ''
 languageCode = 'en-us'
 title = 'Weihang Guo'
-theme = 'tossacad'
+theme = 'hugo-coder'
 
 [[menus.main]]
 name = 'Projects'
