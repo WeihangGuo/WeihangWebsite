@@ -1,15 +1,23 @@
 {
-    "github": {
-      "silent": true
-    },
+    "version": 2,
     "builds": [
       {
         "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "submodules": true
+          "submodules": true, 
+          "distDir": "public"
         }
       }
+    ],
+    "routes": [
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/.*",
+        "dest": "/"
+      }
     ]
-  }
+}
   
