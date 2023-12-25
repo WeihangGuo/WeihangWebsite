@@ -1,0 +1,3 @@
+[submodule "themes/TossAcad"]
+	path = themes/TossAcad
+	url = https://github.com/baboonSTW/TossAcad.git
